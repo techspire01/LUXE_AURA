@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(261, 75%, 66%);
+    color: black; /* Changed from #333 to black */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #c66d6d;
+    color: rgb(23, 22, 22);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+/* Style the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1a1a1a;
+}
+
+/* Logo styling */
+.logo img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d4af37; /* Gold effect on hover */
+}
+
+/* Banner Section */
+.banner {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.banner-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c09f80;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #a97d5d;
+}
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.testimonial {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+}
+
+.newsletter input[type=email] {
+    padding: 10px;
+    width: 40%;
+    margin: 10px 0;
+}
+
+.newsletter .btn {
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+}

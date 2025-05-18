@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Luxe Aura</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            color: white;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: black;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            animation: slideDown 0.8s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: gold;
+        }
+
+        .container {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 900px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: linear-gradient(45deg, gold, orange);
+            border: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, orange, red);
+            transform: scale(1.1);
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            padding: 20px;
+            background: black;
+            margin-top: 50px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Luxe Aura</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="styling.html">Fashion Stylist</a></li>
+                <li><a href="laundry.html">Laundry Services</a></li>
+                <li><a href="subscriptions.html">Subscription Plans</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="section">
+            <h2>Our Story</h2>
+            <p>Luxe Aura was founded with a vision to redefine fashion, styling, and laundry services. Our journey began with a simple idea— to provide a **luxurious and effortless** shopping and styling experience for every fashion enthusiast.</p>
+        </div>
+
+        <div class="section">
+            <h2>What We Offer</h2>
+            <ul>
+                <li><strong>Premium Fashion Collection:</strong> Trendsetting apparel for every occasion</li>
+                <li><strong>Professional Styling Services:</strong> Personal stylists to help you create your dream look</li>
+                <li><strong>High-Quality Laundry & Care:</strong> Expert garment care for long-lasting wear</li>
+                <li><strong>Seamless Delivery & Venue Styling:</strong> We bring fashion to your doorstep</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Why Choose Luxe Aura?</h2>
+            <p>We are committed to offering top-notch fashion solutions with a focus on **quality, sustainability, and customer satisfaction**.</p>
+            <ul>
+                <li>🔹 **Exclusive Designer Wear**</li>
+                <li>🔹 **Personalized Styling Sessions**</li>
+                <li>🔹 **Fast & Reliable Delivery**</li>
+                <li>🔹 **Eco-Friendly Laundry Services**</li>
+                <li>🔹 **Customer-Centric Approach**</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Meet Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="static/images/team1.jpg" alt="Founder">
+                    <h3>Emma Roberts</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="static/images/team2.jpg" alt="Lead Stylist">
+                    <h3>James Carter</h3>
+                    <p>Lead Fashion Stylist</p>
+                </div>
+                <div class="team-member">
+                    <img src="static/images/team3.jpg" alt="Operations Manager">
+                    <h3>Sophia Kim</h3>
+                    <p>Operations Manager</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="contact.html" class="btn">Get in Touch</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luxe Aura. All rights reserved.</p>
+    </footer>
+</body>
+</html>

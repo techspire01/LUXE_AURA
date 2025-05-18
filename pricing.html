@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality & Pricing - Luxe Aura</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            color: white;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: black;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            animation: slideDown 0.8s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: gold;
+        }
+
+        .container {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: linear-gradient(45deg, gold, orange);
+            border: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, orange, red);
+            transform: scale(1.1);
+        }
+
+        footer {
+            padding: 20px;
+            background: black;
+            margin-top: 50px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luxe Aura - Quality & Pricing</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="styling.html">Fashion Stylist</a></li>
+                <li><a href="laundry.html">Laundry Services</a></li>
+                <li><a href="subscriptions.html">Subscription Plans</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="box">
+            <h2>Premium Quality Assurance</h2>
+            <p>At Luxe Aura, we ensure that every piece of clothing and service meets the highest quality standards. Our materials are sourced from the best manufacturers, and our stylists are experienced professionals dedicated to giving you the best fashion experience.</p>
+        </div>
+
+        <div class="box">
+            <h2>Our Pricing</h2>
+            <p>We offer competitive pricing for our premium services. Whether you're looking for a fashion stylist, laundry service, or custom designs, we have packages that fit your budget.</p>
+            <ul>
+                <li><strong>Basic Package:</strong> $50 - Styling consultation + outfit suggestions</li>
+                <li><strong>Premium Package:</strong> $120 - Full styling service + custom outfit recommendations</li>
+                <li><strong>Luxury Package:</strong> $250 - Personalized wardrobe makeover + styling session</li>
+            </ul>
+        </div>
+
+        <a href="shop.html" class="btn">Explore Our Services</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luxe Aura. All rights reserved.</p>
+    </footer>
+</body>
+</html>

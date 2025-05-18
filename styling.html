@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Stylist</title>
+    <link rel="stylesheet" href="static/css/fashionstyle.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #ff8c00, #ff2e63);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #ffeb3b;
+        }
+        .fashion-design, .stylist-services {
+            padding: 50px 20px;
+            animation: slideUp 1.2s ease-in-out;
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        button {
+            padding: 12px 25px;
+            background: linear-gradient(45deg, gold, orange);
+            border: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        button:hover {
+            background: linear-gradient(45deg, orange, red);
+            transform: scale(1.1);
+        }
+        footer {
+            padding: 20px;
+            background: black;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="static/images/logo.jpg" alt="Luxe Aura Logo" width="80">
+            </a>
+        </div>
+        <h1>Fashion Stylist</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="styling.html">Fashion Stylist</a></li>
+                <li><a href="laundry.html">Laundry Services</a></li>
+                <li><a href="subscriptions.html">Subscription Plans</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="fashion-design">
+        <h2>Design Your Dress</h2>
+        <p>Choose from various styles, sizes, and materials to create your perfect outfit.</p>
+        <form>
+            <label for="gender">Select Gender:</label>
+            <select id="gender" name="gender" onchange="updateOptions()">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            
+            <label for="size">Select Size:</label>
+            <select id="size" name="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            
+            <label for="material">Select Material:</label>
+            <select id="material" name="material">
+                <option value="cotton">Cotton</option>
+                <option value="silk">Silk</option>
+                <option value="polyester">Polyester</option>
+                <option value="linen">Linen</option>
+            </select>
+            
+            <label for="style">Choose Style:</label>
+            <select id="style" name="style">
+                <option value="casual">Casual</option>
+                <option value="formal">Formal</option>
+                <option value="party">Party Wear</option>
+            </select>
+            
+            <button type="submit">Design Now</button>
+        </form>
+    </section>
+    
+    <section class="stylist-services">
+        <h2>Hire a Stylist</h2>
+        <p>Book a professional stylist for a personalized experience.</p>
+        <button>Book Now</button>
+        
+        <h2>Online/Offline Consultation</h2>
+        <p>Choose between a virtual or in-person styling session.</p>
+        
+        <h2>Stylist Selection Process</h2>
+        <p>View stylist profiles, expertise, and customer ratings before booking.</p>
+        
+        <h2>Chat Feature</h2>
+        <p>Interact with stylists directly to discuss your fashion needs.</p>
+        
+        <h2>Appointment Scheduling</h2>
+        <p>Select your preferred date, time, and venue for the styling session.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luxe Aura. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Aura - Home</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: black;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            animation: slideDown 0.8s ease-in-out;
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .banner {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('static/images/fashion-bg.jpg') no-repeat center center/cover;
+            animation: zoomIn 1.5s ease-in-out;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: linear-gradient(45deg, gold, orange);
+            border: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .btn:hover {
+            background: linear-gradient(45deg, orange, red);
+            transform: scale(1.1);
+        }
+        .testimonial {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        footer {
+            padding: 20px;
+            background: black;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        #chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            animation: fadeInUp 0.5s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        #chat-header {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #chat-output {
+            max-height: 250px;
+            overflow-y: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .user-message {
+            align-self: flex-end;
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin: 5px;
+            max-width: 70%;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        .bot-message {
+            align-self: flex-start;
+            background: #f1f1f1;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin: 5px;
+            max-width: 70%;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #chat-input-area {
+            display: flex;
+            padding: 5px;
+            border-top: 1px solid #ddd;
+        }
+        #chat-input {
+            flex-grow: 1;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        #chat-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .suggested-questions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .suggested-question {
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#home"><img src="static/images/logo.jpg" alt="Luxe Aura Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="styling.html">Fashion Stylist</a></li>
+                <li><a href="laundry.html">Laundry Services</a></li>
+                <li><a href="subscriptions.html">Subscription Plans</a></li>
+                <li><a href="delivery.html">Delivery & Venue</a></li>
+                <li><a href="pricing.html">Quality & Pricing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h2>Luxe Aura Fashion, Styling & Laundry Services</h2>
+            <p>Experience premium clothing, expert styling, and high-quality laundry services.</p>
+            <a href="shop.html" class="btn">Explore Now</a>
+        </div>
+    </section>
+    
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+                <p>Hear from our satisfied customers about their Luxe Aura experience</p>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"The styling service has completely changed my wardrobe! Highly recommend Luxe Aura!"</p>
+                    <h4>- Priya Sharma</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Fantastic laundry service! My clothes always come back looking brand new."</p>
+                    <h4>- Rahul Kapoor</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for exclusive offers and the latest fashion trends.</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Luxe Aura. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        class LaundryChatbot {
+            constructor() {
+                this.responses = {
+                    "hello": "Hello! Welcome to our laundry service. How can I assist you today?",
+                    "pricing": "Our pricing depends on the service. You can check our latest prices on the Pricing page.",
+                    "subscription": "We offer various subscription plans for regular customers. Check the Subscriptions page for more details.",
+                    "services": "We provide washing, dry cleaning, ironing, and more. What service are you looking for?",
+                    "delivery": "We offer pickup and delivery services. You can schedule a pickup through our website.",
+                    "contact": "You can reach us via the Contact page or call our customer support.",
+                    "shopping": "We have a shop where you can purchase laundry-related products. Check out the Shop page for more details.",
+                    "features": "Our service includes stain removal, fabric softening, express delivery, and eco-friendly washing options.",
+                    "default": "I'm not sure about that. Can you rephrase your question?"
+                };
+            }
+
+            getResponse(message) {
+                const lowerCaseMessage = message.toLowerCase();
+                for (let key in this.responses) {
+                    if (lowerCaseMessage.includes(key)) {
+                        return this.responses[key];
+                    }
+                }
+                return this.responses["default"];
+            }
+        }
+
+        // Chatbot UI integration
+        const chatbot = new LaundryChatbot();
+        document.addEventListener("DOMContentLoaded", function() {
+            const chatContainer = document.createElement("div");
+            chatContainer.id = "chat-container";
+            chatContainer.innerHTML = `
+                <div id="chat-header">Chat with Us</div>
+                <div id="chat-output"></div>
+                <div id="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="Type a message..." />
+                    <button id="chat-button">▶</button>
+                </div>
+                <div class="suggested-questions">
+                    <div class="suggested-question">Pricing</div>
+                    <div class="suggested-question">Services</div>
+                    <div class="suggested-question">Subscription</div>
+                    <div class="suggested-question">Delivery</div>
+                </div>
+            `;
+            document.body.appendChild(chatContainer);
+
+            const chatInput = document.getElementById("chat-input");
+            const chatOutput = document.getElementById("chat-output");
+            const chatButton = document.getElementById("chat-button");
+            const suggestedQuestions = document.querySelectorAll(".suggested-question");
+
+            chatButton.addEventListener("click", function() {
+                const userMessage = chatInput.value;
+                if (userMessage.trim() !== "") {
+                    const botResponse = chatbot.getResponse(userMessage);
+                    chatOutput.innerHTML += `<div class='user-message'>${userMessage}</div>`;
+                    chatOutput.innerHTML += `<div class='bot-message'>${botResponse}</div>`;
+                    chatInput.value = "";
+                    chatOutput.scrollTop = chatOutput.scrollHeight;
+                }
+            });
+
+            suggestedQuestions.forEach(question => {
+                question.addEventListener("click", function() {
+                    const userMessage = this.textContent;
+                    const botResponse = chatbot.getResponse(userMessage);
+                    chatOutput.innerHTML += `<div class='user-message'>${userMessage}</div>`;
+                    chatOutput.innerHTML += `<div class='bot-message'>${botResponse}</div>`;
+                    chatOutput.scrollTop = chatOutput.scrollHeight;
+                });
+            });
+
+            document.getElementById("chat-header").addEventListener("click", function() {
+                chatContainer.classList.toggle("collapsed");
+                if (chatContainer.classList.contains("collapsed")) {
+                    chatContainer.style.height = "40px";
+                } else {
+                    chatContainer.style.height = "auto";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

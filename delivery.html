@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery & Venue - Luxe Aura</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            color: white;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: black;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            animation: slideDown 0.8s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: gold;
+        }
+
+        .container {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: linear-gradient(45deg, gold, orange);
+            border: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, orange, red);
+            transform: scale(1.1);
+        }
+
+        footer {
+            padding: 20px;
+            background: black;
+            margin-top: 50px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luxe Aura - Delivery & Venue</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="styling.html">Fashion Stylist</a></li>
+                <li><a href="laundry.html">Laundry Services</a></li>
+                <li><a href="subscriptions.html">Subscription Plans</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="box">
+            <h2>Fast & Reliable Delivery</h2>
+            <p>We offer **nationwide delivery** for all our fashion, styling, and laundry services. Enjoy fast shipping with secure packaging to keep your items in perfect condition.</p>
+            <ul>
+                <li><strong>Standard Delivery:</strong> 3-5 Business Days</li>
+                <li><strong>Express Delivery:</strong> 1-2 Business Days</li>
+                <li><strong>Same-Day Delivery:</strong> Available in select cities</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Exclusive Venue Services</h2>
+            <p>Get ready for **fashion events, styling sessions, and personal wardrobe transformations** at your chosen venue. Our professional team ensures a luxurious and seamless experience.</p>
+            <ul>
+                <li><strong>Home Styling:</strong> Personalized styling at your home</li>
+                <li><strong>Event Styling:</strong> Get styled for weddings, galas, and parties</li>
+                <li><strong>Corporate Styling:</strong> Make a lasting impression at business events</li>
+            </ul>
+        </div>
+
+        <a href="shop.html" class="btn">Book a Service</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luxe Aura. All rights reserved.</p>
+    </footer>
+</body>
+</html>
